@@ -13,17 +13,21 @@
   <header class="had">
     <h1>Домашнее задание JS_модуль_7</h1>
     <ul class="menu-nav">
-      <li><a href="#categories" class="link">Категории - task-1</a></li>
-      <li><a href="#ingredients" class="link">Ингредиенты - task-2</a></li>
-      <li><a href="#gallery" class="link">Галерея - task-3</a></li>
-      <li><a href="#counter" class="link">Счетчик - task-4</a></li>
+      <li><a href="#categories" class="link">Категории - Task-1</a></li>
+      <li><a href="#ingredients" class="link">Ингредиенты - Task-2</a></li>
+      <li><a href="#gallery" class="link">Галерея - Task-3</a></li>
+      <li><a href="#counter" class="link">Счетчик - Task-4</a></li>
+      <li><a href="#form-name" class="link">Форма приветствия - Task-5</a></li>
+      <li><a href="#form-validation" class="link">Валидация - Task-6</a></li>
+      <li><a href="#form-size-control-text" class="link">Абракадабра - Task-7</a></li>
+      <li><a href="#controls" class="link">Создание елемента - Task-8</a></li>
 
     </ul>
   </header>
 
 <!-- task-1.js -->
-  <section> 
-    <h2>task-1</h2>
+  <section class="task"> 
+    <h2>Task-1</h2>
     <ul id="categories">
       <li class="item">
         <h2>Животные</h2>
@@ -58,19 +62,20 @@
   </section>
 
 <!-- task-2.js -->
-  <section>
-    <h2>task-2</h2>
+  <section class="task">
+    <h2>Task-2</h2>
     <ul id="ingredients"></ul>
   </section>
 
 <!-- task-3.js -->
-  <section>
-    <h2>task-3</h2>
+  <section class="task">
+    <h2>Task-3</h2>
     <ul id="gallery"></ul>
   </section>
 
 <!-- task-4.js -->
-<section>
+<section class="task">
+  <h2>Task-4</h2>
   <div id="counter">
     <button type="button" data-action="decrement">-1</button>
     <span id="value">0</span>
@@ -79,25 +84,34 @@
 </section>
 
 <!-- task-5.js -->
-<section>
+<section id="form-name" class="task">
+  <h2>Task-5</h2>
   <input type="text" placeholder="Ваше имя?" id="name-input" />
   <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
 </section>
 
 <!-- task-6.js -->
-<section>
-  <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символов" />
+<section id="form-validation" class="task">
+  <h2>Task-6</h2>
+  <input 
+  type="text" 
+  id="validation-input" 
+  data-length="6" 
+  placeholder="Введи 6 символов" 
+  />
 </section>
 
 <!-- task-7.js -->
-<section>
+<section id="form-size-control-text" class="task">
+  <h2>Task-7</h2>
   <input id="font-size-control" type="range" />
   <br />
   <span id="text">Абракадабра!</span>
 </section>
 
 <!-- task-8.js -->
-<section>
+<section class="task">
+  <h2>Task-8</h2>
   <div id="controls">
     <input type="number" min="0" max="100" step="1" />
     <button type="button" data-action="render">Создать</button>
@@ -110,11 +124,11 @@
   <!-- <script src="./js/task-1.js" type="module"></script> -->
   <!-- <script src="./js/task-2.js" type="module"></script> -->
   <!-- <script src="./js/task-3.js" type="module"></script> -->
-  <script src="./js/task-4.js" type="module"></script>
+  <!-- <script src="./js/task-4.js" type="module"></script> -->
   <!-- <script src="./js/task-5.js" type="module"></script> -->
   <!-- <script src="./js/task-6.js" type="module"></script> -->
   <!-- <script src="./js/task-7.js" type="module"></script> -->
-  <!-- <script src="./js/task-8.js" type="module"></script> -->
+  <script src="./js/task-8.js" type="module"></script>
 </body>
 
 </html>

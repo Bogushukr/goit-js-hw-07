@@ -2,6 +2,78 @@ body {
   background-color: teal;
   color: #ffffff;
 }
+.had {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.menu-nav {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: #34136b;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.task {
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+
+#gallery {
+  display: flex;
+  padding: 0;
+}
+
+.gallery_item {
+  list-style: none;
+  width: calc((100% - 2 * 10px) / 3);
+}
+
+.gallery_image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery_item:not(:last-child) {
+  margin-right: 10px;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+}
 
 #validation-input {
   border: 3px solid #bdbdbd;

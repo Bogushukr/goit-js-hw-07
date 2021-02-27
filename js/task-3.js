@@ -20,8 +20,8 @@ const images = [
 const galleryRef = document.querySelector('#gallery');
 
 const galleryList = images.reduce((item, { url, alt,  }) => {
-  const image = `<img src="${url}" alt="${alt}" class="gallery__image">`;
-  item += `<li class="gallery__item">${image}</li>`;
+  const image = `<img src="${url}" alt="${alt}" class="gallery_image">`;
+  item += `<li class="gallery_item">${image}</li>`;
   return item; 
 }, '');
 
