@@ -1,17 +1,14 @@
 const refs = {
-    formRef: document.querySelector('input#validation-input')
+  form: document.querySelector('input#validation-input')
 };
 
-const onFocusOutHandler = function (event) {
-  const textLength = this.value.length;
-  const minTextLength = this.dataset.length;
-  if (textLength < minTextLength) {
-    this.classList.add('invalid');
-    this.classList.remove('valid');
+refs.form.addEventListener('blur', () => {
+  if (refs.form.value.length === Number(refs.form.getAttribute('data-length'))
+  ) {
+    refs.form.className = 'invalid';
+    refs.form.className = 'valid';
   } else {
-    this.classList.add('valid');
-    this.classList.remove('invalid');
+    refs.form.className = 'valid';
+    refs.form.className = 'invalid';
     } 
-};
-
-refs.formRef.addEventListener('blur', onFocusOutHandler);
+});
