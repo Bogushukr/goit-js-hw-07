@@ -1,4 +1,6 @@
-const formRef = document.querySelector('input#validation-input');
+const refs = {
+    formRef: document.querySelector('input#validation-input')
+};
 
 const onFocusOutHandler = function (event) {
   const textLength = this.value.length;
@@ -12,4 +14,4 @@ const onFocusOutHandler = function (event) {
     } 
 };
 
-formRef.addEventListener('blur', onFocusOutHandler);
+refs.formRef.addEventListener('blur', onFocusOutHandler);
